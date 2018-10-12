@@ -1,0 +1,22 @@
+#element { margin: 0; padding: 0; font-size: 100%; line-height: 1; }
+
+.mugshot {
+    float: left;
+    border: solid 2px;
+    border-radius: 100%;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.hamburger {
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.bars {
+    width: 2.3em;
+    height: .5em;
+    background-color: black;
+    margin: .2em;
+}
