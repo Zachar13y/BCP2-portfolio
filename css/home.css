@@ -1,0 +1,57 @@
+/* #element { margin: 0; padding: 0; font-size: 100%; line-height: 1; } */
+
+
+
+.header {
+    background-color: slategray;
+    font-family: 'karla', sans-serif;
+}
+
+.mugshot {
+    width: 18%;
+    height: auto;
+    position: relative;
+    border: solid rgb(150, 149, 149) 1px;
+    border-radius: 100%;
+    margin-top: 1.2em;
+    margin-left: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hamburger {
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.bars {
+    border: solid rgb(150, 149, 149) 1px;
+    width: 2.3em;
+    height: .5em;
+    background-color: black;
+    margin: .2em;
+}
+
+.nav-drop {
+    float: right;
+    display: none;
+    text-align-last: right;
+    font-size: 4em;
+}
+
+.projects {
+    display: flex;
+    margin: 1em;
+    padding: 3em;
+    border-top: solid .8px;
+    justify-content: space-between;
+}
+
+.project-pic {
+    width: 7em;
+    height: 7em;
+    position: relative;
+    border: solid 2px gray;
+    border-radius: 10%;
+    margin: 1em;
+}

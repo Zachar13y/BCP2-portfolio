@@ -1,35 +1,3 @@
-/* #element { margin: 0; padding: 0; font-size: 100%; line-height: 1; } */
-
-.mugshot {
-    width: 20%;
-    height: auto;
-    position: relative;
-    border: solid 2px;
-    border-radius: 100%;
-    margin-top: 1em;
-    margin-left: 1em;
-}
-
-.hamburger {
-    float: right;
-    margin-top: 1em;
-    margin-right: 1em;
-}
-
-.bars {
-    width: 2.3em;
-    height: .5em;
-    background-color: black;
-    margin: .2em;
-}
-
-.nav-drop {
-    float: right;
-    display: none;
-    text-align-last: right;
-    font-size: 4em;
-}
-
-.projects {
-    border-top: solid 1px;
+body {
+    background-color: rgb(236, 234, 234);
 }
