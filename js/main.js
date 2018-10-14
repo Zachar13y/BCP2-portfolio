@@ -1,33 +1,23 @@
 "use strict";
 
-// function dropdown(event) {
+function dropDown() {
     var hamburger = document.querySelector('.hamburger');
     var fullMenu = document.querySelector('.nav-drop');
+    var clickOut = document.querySelector('#wrapper');
     
-    console.log(hamburger);
+    hamburger.addEventListener('click', (event) => {
+        event.preventDefault(event);
+        clickOut.addEventListener('click', (event) => {
+            event.preventDefault(event);
 
-    hamburger.addEventListener('click', () => {
-        event.preventDefault();
-
-        if (window.getComputedStyle(hamburger).display === 'block') {
-            hamburger.style.display = 'none';
-        } else {
-            hamburger.style.display = 'block';
-        }
-    });
-    
-    // dropdown();
-//     const menu = document.querySelector('.menu');
-//     const menuToggle = document.querySelector('menuToggle');
-
-//   menuToggle.addEventListener('click', (e) => {
-//     e.preventDefault();
-
-//     if (window.getComputedStyle(menu).display === 'block') {
-//       menu.style.display = 'none';
-//     } else  {
-//       menu.style.display = 'block';
-//     }
-//   });
-    
-// }
+            if (window.getComputedStyle(hamburger).display === 'block') {
+                hamburger.style.display = 'none';
+                fullMenu.style.display = 'block';
+            } else {
+                hamburger.style.display = 'block';
+                fullMenu.style.display = 'none';
+            }
+        })
+    })
+};
+dropDown();
