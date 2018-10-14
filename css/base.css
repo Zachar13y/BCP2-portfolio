@@ -1,0 +1,13 @@
+#wrapper {
+    position: relative;
+}
+
+body {
+    background-color: rgb(236, 234, 234);
+    /* font-size: 2em; */
+}
+
+span {
+    float: left;
+    clear: left;
+}
