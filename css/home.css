@@ -20,6 +20,10 @@
     margin-bottom: 1em;
 }
 
+.mugshot:active {
+    opacity: .5;
+}
+
 .hamburger {
     float: right;
     margin-top: 1em;
@@ -64,7 +68,7 @@
 .project-pic:hover {
     opacity: .5;
     border-radius: 100%;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .links {
