@@ -1,5 +1,5 @@
 #wrapper {
-    position: relative;
+    display: inline;
 }
 
 body {
@@ -7,7 +7,55 @@ body {
     /* font-size: 2em; */
 }
 
-span {
-    float: left;
-    clear: left;
+.header {
+    background-color: slategray;
+    border: solid rgb(150, 149, 149) 1px;
+    font-family: 'karla', sans-serif;
+    overflow: hidden;
+}
+
+.mugshot {
+    width: 20%;
+    height: auto;
+    position: relative;
+    border: solid rgb(150, 149, 149) 1px;
+    border-radius: 100%;
+    margin-top: 1.2em;
+    margin-left: 1.2em;
+    margin-bottom: 1em;
+}
+
+.mugshot:active {
+    opacity: .5;
+}
+
+.hamburger {
+    float: right;
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+}
+
+.bars {
+    border: solid rgb(150, 149, 149) 1px;
+    width: 2.9em;
+    height: .4em;
+    background-color: black;
+    margin: .3em;
+}
+
+
+.nav-drop {
+    margin-right: 1em;
+    float: right;
+    display: none;
+    text-align-last: left;
+    font-size: 2em;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+    .hamburger {
+        display: none;
+    }
 }
