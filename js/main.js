@@ -1,20 +1,35 @@
 'use strict';
 
-var hamburger = document.querySelector('.hamburger');
-var fullMenu = document.querySelector('.nav-drop');
 
-function dropDown() {
-    if (hamburger.style.display === 'block') {
-            hamburger.style.display = 'none';
-            fullMenu.style.display = 'block';
-    } 
-    else {
-        hamburger.style.display = 'block';
-        // fullMenu.style.display = 'none';
+function Project(rawObjData) {
+    this.title = title;
+    this.icon = icon;
+    this.description = description;
+    this.screenshots = screenshots;
+}
+var projects = [];
+
+projects.push(new projects(rawData));
+// ask if this is the ideal location for this code
+
+function buildProjects() {
+    
+    for(var projectsIndex = 0; projectsIndex < projects.length; projectsIndex++) {
+        var content = document.getElementById('project-box');
+        var item = document.createElement('div');
+        item.setAttribute('class', 'one-project');
+        var name = document.createElement('h3');
+        name.innerText= projects[i].title;
+        var projectIcon = document.createElement('img');
+        projectIcon.setAttribute('src', projects[i].icon);
+        var about = document.createElement('p');
+        about.innerText = projects[i].description;
+        item.appendChild(name);
+        item.appendChild(projectIcon);
+        item.appendChild(about);
+        content.appendChild(item);
     }
-};
+}
 
-window.addEventListener('click', function(){
-    fullMenu.style.display === 'none';
-});
-hamburger.addEventListener('click', dropDown);
+window.addEventListener('load', buildProjects);
+

@@ -10,7 +10,8 @@ body {
 .header {
     background-color: slategray;
     border: solid rgb(150, 149, 149) 1px;
-    font-family: 'karla', sans-serif;
+    font-family: 'ranga', sans-serif;
+    font-size: 2em;
     overflow: hidden;
 }
 
@@ -20,8 +21,8 @@ body {
     position: relative;
     border: solid rgb(150, 149, 149) 1px;
     border-radius: 100%;
-    margin-top: 1.2em;
-    margin-left: 1.2em;
+    margin-top: .5em;
+    margin-left: .5em;
     margin-bottom: 1em;
 }
 
@@ -53,9 +54,14 @@ body {
 }
 
 
-
 @media only screen and (min-width: 700px) {
     .hamburger {
         display: none;
     }
+
+    /* .bars {
+        width: 22%;
+        height: auto;
+    } */
 }
+       
