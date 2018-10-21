@@ -1,6 +1,6 @@
 'use strict';
 
-var rawData = [{
+var rawObjData = [{
     title: 'jam-time',
     description: '<p>Jam Time is a delivery service app that was developed for  & a sandwich company</p>',
     icon: '<img src="profile-jam.jpg">',
@@ -19,5 +19,7 @@ var rawData = [{
     title: 'sipster',
     description: '<p>Sipster is a coffee shop locator app that was developed for a dude who loves coffee</p>',
     icon: '<img src="profile-coffee.jpg">',
-},
+}
 ];
+
+console.log(rawObjData);

@@ -4,7 +4,7 @@
 
 body {
     background-color: rgb(236, 234, 234);
-    /* font-size: 2em; */
+    font-size: .8em;
 }
 
 .header {
@@ -32,14 +32,14 @@ body {
 
 .hamburger {
     float: right;
-    margin-top: 1.5em;
-    margin-right: 1.5em;
+    margin-top: .5em;
+    margin-right: .5em;
 }
 
 .bars {
     border: solid rgb(150, 149, 149) 1px;
-    width: 2.9em;
-    height: .4em;
+    width: 2em;
+    height: .2em;
     background-color: black;
     margin: .3em;
 }
@@ -53,6 +53,10 @@ body {
     font-size: 2em;
 }
 
+.name {
+    margin-top: 0;
+    margin-left: .5em;
+}
 
 @media only screen and (min-width: 700px) {
     .hamburger {

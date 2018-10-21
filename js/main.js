@@ -1,15 +1,17 @@
 'use strict';
 
+var projects = [];
 
-function Project(rawObjData) {
+function Project(title, icon, description, screenshots) {
     this.title = title;
     this.icon = icon;
     this.description = description;
     this.screenshots = screenshots;
-}
-var projects = [];
 
-projects.push(new projects(rawData));
+    projects.push(new Project(rawObjData));
+}
+console.log(projects);
+
 // ask if this is the ideal location for this code
 
 function buildProjects() {
@@ -30,6 +32,17 @@ function buildProjects() {
         content.appendChild(item);
     }
 }
-
 window.addEventListener('load', buildProjects);
+console.log(buildProjects);
+
+
+
+// var student = "Zack";
+// var response = `Hey, My name is ${student}. I'm happy to be here.`;
+
+// <script id="pet-template" type="text/x-handlebars-template">
+//     <article>
+//         <h2></h2>
+//     </article>
+// </script>
 
