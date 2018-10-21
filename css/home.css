@@ -69,6 +69,7 @@
 }
 
 i {
+
     float: left;
     clear: left;
     font-size: 7em;
@@ -80,8 +81,8 @@ i:hover {
     color: black;
 }
 
-@media only screen and (min-width: 700px) {
+/* @media only screen and (min-width: 700px) {
     hamburger {
         display: none;
     }
-}
+} */
