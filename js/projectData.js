@@ -22,4 +22,18 @@ var rawObjData = [{
 }
 ];
 
-console.log(rawObjData);
+// console.log(rawObjData);
+
+
+// //Request
+
+// var xhr = new XMLHttpRequest();
+// xhr.open('GET', 'data/test.json', true);
+// xhr.send('search=arduino');
+
+// //Response
+// xhr.onload = function() {
+//     if (xhr.status === 200) {
+//         //process results from server
+//     }
+// }
