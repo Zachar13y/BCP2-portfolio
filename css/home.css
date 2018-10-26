@@ -9,12 +9,6 @@
     align-items: flex-start;
 }
 
-.project-pic {
-    width: 20%;
-    border: solid 2px gray;
-    border-radius: 10%;
-}
-
 .project-pic:hover {
     opacity: .5;
     border-radius: 100%;
@@ -27,7 +21,6 @@
 }
 
 i {
-
     float: left;
     clear: left;
     font-size: 7em;
@@ -40,7 +33,7 @@ i:hover {
 }
 
 @media only screen and (min-width: 700px) {
-    hamburger {
+    .hamburger {
         display: none;
     }
 }

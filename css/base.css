@@ -64,6 +64,18 @@ header h2 {
   max-height: 15em;
 }
 
+.project-screenshot {
+    width: 100%;
+}
+
+.project-pic {
+    width: 20%;
+    border: solid 2px gray;
+    border-radius: 10%;
+}
+
+
+
 @media only screen and (min-width: 700px) {
     .hamburger {
         display: none;

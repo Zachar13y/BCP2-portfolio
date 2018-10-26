@@ -1,37 +1,24 @@
 'use strict';
 
 var rawObjData = [{
-    title: 'jam-time',
-    description: '<p>Jam Time is a delivery service app that was developed for & a sandwich company</p>',
-    icon: '<img src="profile-jam.jpg">',
+    title: 'Jam-Time',
+    description: 'Jam Time is a delivery service app that was developed for & a sandwich company.',
+    icon: "/assets/profile-jam-screenshot.jpg",
 },
 {
-    title: 'bus-mall',
-    description: '<p>Bus Mall is a marketing app that was developed for a transportation company</p>',
-    icon: '<img src="profile-portland.jpg">',
+    title: 'Bus-Mall',
+    description: 'Bus Mall is a marketing app that was developed for a transportation company.',
+    icon: "/assets/profile-portland-screenshot.jpg",
 },
 {
-    title: 'salmon-cookies',
-    description: '<p>Salmon Cookies is a market analysis app that was developed for a cookie company</p>',
-    icon: '<img src="profile-salmon.jpg">',
+    title: 'Salmon-Cookies',
+    description: 'Salmon Cookies is a market analysis app that was developed for a cookie company.',
+    icon: "/assets/profile-salmon-screenshot.jpg",
 },
 {
-    title: 'sipster',
-    description: '<p>Sipster is a coffee shop locator app that was developed for a dude who loves coffee</p>',
-    icon: '<img src="profile-coffee.jpg">',
+    title: 'Sipster',
+    description: 'Sipster is a coffee shop locator app that was developed for a dude who loves coffee.',
+    icon: "/assets/profile-coffee-shop.jpg",
 }
 ];
 
-
-// //Request
-
-// var xhr = new XMLHttpRequest();
-// xhr.open('GET', 'data/test.json', true);
-// xhr.send('search=arduino');
-
-// //Response
-// xhr.onload = function() {
-//     if (xhr.status === 200) {
-//         //process results from server
-//     }
-// }

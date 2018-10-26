@@ -1,4 +1,5 @@
-// 'use strict';
+'use strict';
+
 var projects = [];
 
 function Project(rawObjData) {
@@ -7,16 +8,8 @@ function Project(rawObjData) {
     this.description = rawObjData.description;
 }
 
-console.log('raw data', rawObjData);
-
-// Project.prototype.newProject = function(rawObjData) {
-//     projects.push(new Project(rawObjData));
-// }
-
-
 function buildProjects() {
     
-    console.log(projects);
     for(var index = 0; index < rawObjData.length; index++) {
         var content = document.getElementById('project-box');
         var item = document.createElement('div');
@@ -26,7 +19,7 @@ function buildProjects() {
         item.appendChild(name);
         var projectIcon = document.createElement('img');
         projectIcon.setAttribute('src', rawObjData[index].icon);
-        // console.log(projectIcon);
+        projectIcon.setAttribute('class', "project-screenshot");
         item.appendChild(projectIcon);
         var about = document.createElement('p');
         about.innerText = rawObjData[index].description;
@@ -34,5 +27,4 @@ function buildProjects() {
         content.appendChild(item);
     }
 }
-// window.addEventListener('load', buildProjects);
-buildProjects();
+window.addEventListener('load', buildProjects);
