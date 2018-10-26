@@ -2,7 +2,7 @@
 
 var rawObjData = [{
     title: 'jam-time',
-    description: '<p>Jam Time is a delivery service app that was developed for  & a sandwich company</p>',
+    description: '<p>Jam Time is a delivery service app that was developed for & a sandwich company</p>',
     icon: '<img src="profile-jam.jpg">',
 },
 {
@@ -21,8 +21,6 @@ var rawObjData = [{
     icon: '<img src="profile-coffee.jpg">',
 }
 ];
-
-// console.log(rawObjData);
 
 
 // //Request

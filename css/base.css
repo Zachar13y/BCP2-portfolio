@@ -1,7 +1,4 @@
-/* #wrapper {
-    display: inline;
-}
- */
+
  body {
     background-color: rgb(236, 234, 234);
     font-size: .8em;
@@ -22,6 +19,7 @@ header {
 
 header h2 {
   margin: 0;
+  font-size: 1.9em;
 }
 
 .mugshot {
@@ -91,10 +89,6 @@ header h2 {
       padding: 0.5em 0;
       border: none;
     }
-
-    /* .bars {
-        width: 22%;
-        height: auto;
-    } */
+    
 }
 
