@@ -28,6 +28,10 @@ header h2 {
     border-radius: 100%;
 }
 
+.mugshot:hover {
+    cursor: pointer;
+}
+
 .mugshot:active {
     opacity: .5;
 }
@@ -64,15 +68,20 @@ header h2 {
   max-height: 15em;
 }
 
-.project-screenshot {
-    width: 100%;
-}
-
 .project-pic {
     width: 20%;
     border: solid 2px gray;
     border-radius: 10%;
 }
+
+h3 {
+    font-size: 1.7em;
+}
+
+.project-screenshot {
+    width: 100%;
+}
+
 
 
 

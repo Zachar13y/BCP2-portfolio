@@ -10,12 +10,13 @@
 }
 
 .project-pic:hover {
+    cursor: pointer;
     opacity: .5;
     border-radius: 100%;
     transition: .3s;
 }
 
-.links {
+#links {
     border-top: solid .8px;
     overflow: hidden;
 }
@@ -23,14 +24,24 @@
 i {
     float: left;
     clear: left;
-    font-size: 7em;
+    font-size: 6em;
     color: rgb(100, 99, 99);
     margin: .4em;
 }
 
 i:hover {
+    cursor: pointer;
     color: black;
 }
+
+a:visited {
+    color: inherit;
+}
+
+#about {
+    font-size: 1.5em;
+}
+
 
 @media only screen and (min-width: 700px) {
     .hamburger {
