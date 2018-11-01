@@ -2,47 +2,44 @@
 
 var projects = [];
 
-function Project(title, icon, description, screenshots) {
-    this.title = title;
-    this.icon = icon;
-    this.description = description;
-    this.screenshots = screenshots;
-
-    projects.push(new Project(rawObjData));
+function Project(rawObjData) {
+    this.title = rawObjData.title;
+    this.icon = rawObjData.icon;
+    this.description = rawObjData.description;
+    this.date = rawObjData.date
 }
-console.log(projects);
 
-// ask if this is the ideal location for this code
+// Project.prototype.new = function() {
+//     Object.toHTML(rawObjData.date);
+// }
 
-function buildProjects() {
+
+let result = rawObjData.map(pubDate => pubDate.date);
+result.sort(function(a, b) {
+    console.log(a - b);
+    // return a - b;
+})
+console.log(result);
+
+
+
+function buildProjectIcons() {
     
-    for(var projectsIndex = 0; projectsIndex < projects.length; projectsIndex++) {
+    for(var index = 0; index < rawObjData.length; index++) {
         var content = document.getElementById('project-box');
         var item = document.createElement('div');
         item.setAttribute('class', 'one-project');
         var name = document.createElement('h3');
-        name.innerText= projects[i].title;
-        var projectIcon = document.createElement('img');
-        projectIcon.setAttribute('src', projects[i].icon);
-        var about = document.createElement('p');
-        about.innerText = projects[i].description;
+        name.innerText = rawObjData[index].title;
         item.appendChild(name);
+        var projectIcon = document.createElement('img');
+        projectIcon.setAttribute('src', rawObjData[index].icon);
+        projectIcon.setAttribute('class', "project-icon");
         item.appendChild(projectIcon);
+        var about = document.createElement('p');
+        about.innerText = rawObjData[index].description;
         item.appendChild(about);
         content.appendChild(item);
     }
 }
-window.addEventListener('load', buildProjects);
-console.log(buildProjects);
-
-
-
-// var student = "Zack";
-// var response = `Hey, My name is ${student}. I'm happy to be here.`;
-
-// <script id="pet-template" type="text/x-handlebars-template">
-//     <article>
-//         <h2></h2>
-//     </article>
-// </script>
-
+window.addEventListener('load', buildProjectIcons);
