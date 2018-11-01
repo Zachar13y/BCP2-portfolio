@@ -6,9 +6,24 @@ function Project(rawObjData) {
     this.title = rawObjData.title;
     this.icon = rawObjData.icon;
     this.description = rawObjData.description;
+    this.date = rawObjData.date
 }
 
-function buildProjects() {
+// Project.prototype.new = function() {
+//     Object.toHTML(rawObjData.date);
+// }
+
+
+let result = rawObjData.map(pubDate => pubDate.date);
+result.sort(function(a, b) {
+    console.log(a - b);
+    // return a - b;
+})
+console.log(result);
+
+
+
+function buildProjectIcons() {
     
     for(var index = 0; index < rawObjData.length; index++) {
         var content = document.getElementById('project-box');
@@ -19,7 +34,7 @@ function buildProjects() {
         item.appendChild(name);
         var projectIcon = document.createElement('img');
         projectIcon.setAttribute('src', rawObjData[index].icon);
-        projectIcon.setAttribute('class', "project-screenshot");
+        projectIcon.setAttribute('class', "project-icon");
         item.appendChild(projectIcon);
         var about = document.createElement('p');
         about.innerText = rawObjData[index].description;
@@ -27,4 +42,4 @@ function buildProjects() {
         content.appendChild(item);
     }
 }
-window.addEventListener('load', buildProjects);
+window.addEventListener('load', buildProjectIcons);

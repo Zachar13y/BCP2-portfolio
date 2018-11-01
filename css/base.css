@@ -36,6 +36,10 @@ header h2 {
     opacity: .5;
 }
 
+.hamburger:hover {
+    cursor: pointer;
+}
+
 .bars {
     border: solid rgb(150, 149, 149) 1px;
     width: 2.5em;
